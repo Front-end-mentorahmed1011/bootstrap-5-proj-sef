@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>bootstrap project</title>
+</head>
+<body>
+
+<header class="container-fluid">
+  <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light px-lg-4 p-2">
+    <img src="/images/logo.webp" class="mx-lg-5 logo-image rounded-circle" >
+
+    <a class="navbar-brand border-end border-secondary pe-3 mx-lg-5" style="font-size: 2em;" href="#">Architecture</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown border-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex my-2 my-lg-0">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0 me-2" type="submit">Search</button>
+        <button type="button" class="btn btn-outline-success my-2 my-sm-0 me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          login
+        </button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<!-- modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login page</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-check form-switch my-2">
+            <input type="checkbox" class="form-check-input" id="customSwitch1">
+            <label class="form-check-label" for="customSwitch1">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end modal -->
+
+<!-- socials -->
+
+<div class="position-fixed d-flex justify-content-center flex-column socials" style="right: 30px; height: 100vh; font-size: 4em; gap: 50px">
+  <i class="fa-brands fa-square-facebook"></i>
+  <i class="fa-brands fa-square-twitter"></i>
+  <i class="fa-brands fa-square-youtube"></i>
+  <i class="fa-brands fa-square-whatsapp"></i>
+  <i class="fa-brands fa-square-instagram"></i>
+</div>
+
+<!-- end socials -->
+
+<!-- start carousel -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 100vh;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="bg-dark"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="bg-dark"></button>
+  </div>
+  <div class="carousel-inner" style="height: 100%;">
+    <div class="carousel-item active" style="height: 100vh;">
+      <img src="./images/high-angle-measuring-tools-desk-still-life.jpg" class="d-block w-100" style="height: 100%;">
+      <div class="carousel-caption d-none d-md-block bg-light">
+        <h5 class="text-dark" style="font-size: 2em;">First slide label</h5>
+        <p class="text-dark" style="font-size: 1.5em;">Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 100vh;">
+      <img src="./images/male-builder-construction.jpg" class="d-block w-100" style="height: 100%;">
+      <div class="carousel-caption d-none d-md-block bg-light">
+        <h5 class="text-dark" style="font-size: 2em;">Second slide label</h5>
+        <p class="text-dark" style="font-size: 1.5em;">Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 100vh;">
+      <img src="./images/arrangement-different-architectural-elements-with-copy-space.jpg" class="d-block w-100" style="height: 100%;">
+      <div class="carousel-caption d-none d-md-block bg-light">
+        <h5 class="text-dark" style="font-size: 2em;">Third slide label</h5>
+        <p class="text-dark" style="font-size: 1.5em;">Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- end carousel -->
+
+<!-- start intro -->
+
+<div class="container-fluid p-lg-4 p-3 d-flex flex-column bg-warning-subtle rounded-bottom-2" style="gap: 20px;">
+  <h1 class="text-capitalize text-dark mt-md-3">Architecture Modern</h1>
+  <p class="text-dark" style="font-size: 1.3em">Our company delivers the best Architecture and engineering solutions, best consultations to match your business ideas</p>
+  <button class="btn btn-outline-success p-2 d-block mb-3 custom-btn">Read more</button>
+</div>
+
+<!-- end intro -->
+
+<hr>
+
+<!-- start banner -->
+
+<div class="container-fluid p-lg-3 p-1 bg-success rounded-4 shadow-lg">
+  <br>
+  <h2 class="text-center text-light" style="font-size: 3em;">over 2000 Work done</h2>
+  <br>
+</div>
+
+<!-- end banner -->
+
+<hr>
+<!-- start accordion -->
+<div class="container-fluid bg-info py-5 px-3">
+  <div class="accordion fs-5" id="accordionExample">
+    <!-- Accordion Item 1 -->
+    <div class="accordion-item  shadow-lg">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Why Us?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body fs-4">
+          <strong>Architecture Modern company is the best choice as it is cost-efficient, high-quality, with over 10 years of experienced engineers.</strong>
+        </div>
+      </div>
+    </div>
+    <!-- Accordion Item 2 -->
+    <div class="accordion-item  shadow-lg">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Our Expertise
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body fs-4">
+          <strong>We deliver high-standard engineering solutions that are both innovative and practical for modern architectural needs.</strong>
+        </div>
+      </div>
+    </div>
+    <!-- Accordion Item 3 -->
+    <div class="accordion-item  shadow-lg">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Customer Satisfaction
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body fs-4">
+          <strong>We pride ourselves on our commitment to customer satisfaction, delivering projects on time and within budget.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end accordion -->
+<hr>
+<!-- start customer interactions and propsals -->
+
+<div class="container-fluid shadow-lg py-5 px-3 bg-secondary">
+  <div class="container-fluid p-lg-3 p-1 bg-primary rounded-4">
+    <h2 class="text-center text-white" style="font-size: 2.4em;">Job proposal mail</h2>
+  </div>
+  <div class="container-fluid p-lg-3 p-2  bg-dark rounded-4 d-flex flex-column gap-3">
+    <h3 class="text-light mt-3">Please enter message</h3>
+    <textarea rows="7" class="w-100 px-lg-2 px-2 py-1 border-0 rounded-2 " placeholder="this is text field....."></textarea>
+    <button class="btn btn-outline-light p-2 custom-btn-2 d-block mb-3">send</button>
+  </div>
+</div>
+
+
+<hr>
+
+<div class="container-fluid shadow-lg py-5 px-3 bg-secondary">
+  <div class="container-fluid p-lg-3 p-1 bg-primary rounded-4">
+    <h2 class="text-center text-white" style="font-size: 2.4em;">consultations proposal mail</h2>
+  </div>
+  <div class="container-fluid p-lg-3 p-2  bg-dark rounded-4 d-flex flex-column gap-3">
+    <h3 class="text-light mt-3">Please enter message</h3>
+    <textarea rows="7" class="w-100 px-lg-2 px-2 py-1 border-0 rounded-2 " placeholder="this is text field....."></textarea>
+    <button class="btn btn-outline-light p-2 custom-btn-2 d-block mb-3">send</button>
+  </div>
+</div>
+
+
+<hr>
+
+<div class="container-fluid shadow-lg py-5 px-3 bg-secondary">
+  <div class="container-fluid p-lg-3 p-1 bg-primary rounded-4">
+    <h2 class="text-center text-white" style="font-size: 2.4em;">feedback mail</h2>
+  </div>
+  <div class="container-fluid p-lg-3 p-2  bg-dark rounded-4 d-flex flex-column gap-3">
+    <h3 class="text-light mt-3">Please enter message</h3>
+    <textarea rows="7" class="w-100 px-lg-2 px-2 py-1 border-0 rounded-2" id="message" placeholder="this is text field....."></textarea>
+    <button class="btn btn-outline-light p-2 custom-btn-2 d-block mb-3">send</button>
+  </div>
+</div>
+
+<!-- end customer interactions -->
+ <hr>
+
+<!-- start testimonials image  -->
+
+<div class="container-fluid testimonials-image">
+
+</div>
+
+<!-- end testimonials image -->
+
+<!-- start featured products -->
+
+<div class="container-fluid p-lg-3 p-1 bg-success shadow-lg">
+  <br>
+  <h2 class="text-center text-white" style="font-size: 3em;">Featured Products</h2>
+  <br>
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row d-flex container-fluid justify-content-center" style="gap: 150px; width: 100%; ">
+    <div class="card col-3 shadow-lg" style="width: 25rem; height: 35rem;">
+      <img src="./images/high-angle-measuring-tools-desk-still-life.jpg" class="card-img-top" height="70%">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card col-3 shadow-lg" style="width: 25rem; height: 35rem;">
+      <img src="/images/arrangement-different-architectural-elements-with-copy-space.jpg" class="card-img-top" height="70%">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card col-3 shadow-lg" style="width: 25rem; height: 35rem;">
+      <img src="/images/male-builder-construction.jpg" class="card-img-top" height="70%">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row d-flex container-fluid justify-content-center mt-5" style="gap: 150px; width: 100%; ">
+    <div class="card col-3 shadow-lg" style="width: 25rem; height: 35rem;">
+      <img src="./images/high-angle-measuring-tools-desk-still-life.jpg" class="card-img-top" height="70%">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card col-3 shadow-lg" style="width: 25rem; height: 35rem;">
+      <img src="/images/arrangement-different-architectural-elements-with-copy-space.jpg" class="card-img-top" height="70%">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card col-3 shadow-lg" style="width: 25rem; height: 35rem;">
+      <img src="/images/male-builder-construction.jpg" class="card-img-top" height="70%">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row d-flex container-fluid justify-content-center mt-5" style="gap: 150px; width: 100%; ">
+    <div class="card col-3 shadow-lg" style="width: 25rem; height: 35rem;">
+      <img src="./images/high-angle-measuring-tools-desk-still-life.jpg" class="card-img-top" height="70%">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card col-3 shadow-lg" style="width: 25rem; height: 35rem;">
+      <img src="/images/arrangement-different-architectural-elements-with-copy-space.jpg" class="card-img-top" height="70%">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<br>
+<hr>
+<br>
+
+<!-- end featured products -->
+
+<div class="container-fluid testimonials-image">
+
+</div>
+
+<br>
+<hr>
+<br>
+
+
+<!-- start our people -->
+
+<div class="container-fluid p-lg-3 p-1 bg-success shadow-lg">
+  <br>
+  <h2 class="text-center text-white" style="font-size: 3em;">Our Employees</h2>
+  <br>
+</div>
+
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row container-fluid d-flex justify-content-center gap-5 mt-5">
+    <div class="persona persona-1 rounded-4">
+      <div class="overlay rounded-4 p-5">
+        <div class="holder d-flex flex-column justify-content-between" style="height: 100%;">
+          <div>
+            <h4 class="text-white fs-2">Thanks for you</h4>
+            <span class="text-white"><i class="fa-regular fa-clock"></i> 24 octobar 2023</span>
+          </div>
+          <div style="height: 40%;">
+            <img src="images/handsome-business-man-engineer-hard-hat-building.jpg" class="border-1" width="20%" height="70%" style="border-radius: 50%;">
+            <h4 class="text-white">Eng Ali Mohanad</h4>
+            <span class="text-white">Architect</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="persona persona-2 rounded-4">
+      <div class="overlay rounded-4 p-5">
+        <div class="holder d-flex flex-column justify-content-between" style="height: 100%;">
+          <div>
+           <h4 class="text-white fs-2">Thanks for you</h4>
+            <span class="text-white"><i class="fa-regular fa-clock"></i> 24 octobar 2023</span>
+          </div>
+          <div style="height: 40%;">
+            <img src="images/view-male-engineer-work-engineers-day-celebration.jpg" class="border-1" width="20%" height="70%" style="border-radius: 50%;">
+            <h4 class="text-white">Eng Hussien ahmed</h4>
+            <span class="text-white">Project Manager</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="persona persona-3 rounded-4">
+      <div class="overlay rounded-4 p-5">
+        <div class="holder d-flex flex-column justify-content-between" style="height: 100%;">
+          <div>
+            <h4 class="text-white fs-2">Thanks for you</h4>
+            <span class="text-white"><i class="fa-regular fa-clock"></i> 24 octobar 2023</span>
+          </div>
+          <div style="height: 40%;">
+            <img src="images/view-male-engineer-work-engineers-day-celebration (1).jpg" class="border-1" width="20%" height="70%" style="border-radius: 50%;">
+            <h4 class="text-white">Eng Ahmed Mohamed</h4>
+            <span class="text-white">director of PR</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end our friends -->
+
+<br><br><br><br><br><br><br><br><hr>
+
+<!-- start blog -->
+
+<div class="container-fluid p-lg-3 p-1">
+  <br>
+  <h2 class="text-center text-danger" style="font-size: 3em;">Blog Center</h2>
+  <br>
+</div>
+
+<br>
+
+<div class="container d-flex blog p-0 overflow-hidden shadow-lg rounded-4">
+  <div class="desc">
+    <div class="blog-title">
+      <h3 class="text-primary fs-1">Podcast Title</h3>
+      <p class="text-muted fs-3"><i class="bi bi-calendar"></i> Mon, May 25th 2020</p>
+      <hr class="text-primary w-25">
+      <p class="text-secondary">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse animi veniam, odit, sequi praesentium, ab similique laborum in dicta officia vel? Eos magni nostrum assumenda dolorem accusantium magnam et blanditiis numquam repellendus odio molestias repudiandae dolores sapiente ratione porro beatae inventore, culpa id quasi, esse, iusto impedit minima distinctio. Error veniam atque corrupti iure minus dolor, aspernatur ducimus perferendis deleniti beatae soluta doloribus tempore adipisci consequuntur? Id quae sapiente facere nemo eaque, commodi reprehenderit perferendis esse, numquam architecto molestiae dolor. Dolorem similique quia consequuntur cum, consequatur ea nihil natus incidunt quas eos. Iste corporis itaque consequatur mollitia excepturi, cum iusto!
+      </p>
+    </div>
+    
+    <div class="d-flex gap-2 mt-3">
+      <button class="btn btn-outline-success"><i class="bi bi-mic"></i> Podcast</button>
+      <button class="btn btn-outline-success"><i class="bi bi-clock"></i> 55 mins.</button>
+      <button class="btn btn-primary"><i class="bi bi-play-circle"></i> Play Episode</button>
+    </div>
+  </div>
+  <div class="image-div">
+    <img src="./images/Allure of the Seas _ Cruise Ships _ Royal Caribbean  Cruises.jpeg" alt="" class="img-fluid" style="height: 100%;">
+  </div>
+</div>
+
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+
+<div class="container d-flex blog p-0 overflow-hidden shadow-lg rounded-4">
+  <div class="image-div">
+    <img src="./images/Cruise_ 27-day Mediterranean exploration.jpeg" alt="" class="img-fluid" style="height: 100%;">
+  </div>
+  <div class="desc-1">
+    <div class="blog-title">
+      <h3 class="text-primary fs-1">Podcast Title</h3>
+      <p class="text-muted fs-3"><i class="bi bi-calendar"></i> Mon, May 25th 2020</p>
+      <hr class="text-primary w-25">
+      <p class="text-secondary">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse animi veniam, odit, sequi praesentium, ab similique laborum in dicta officia vel? Eos magni nostrum assumenda dolorem accusantium magnam et blanditiis numquam repellendus odio molestias repudiandae dolores sapiente ratione porro beatae inventore, culpa id quasi, esse, iusto impedit minima distinctio. Error veniam atque corrupti iure minus dolor, aspernatur ducimus perferendis deleniti beatae soluta doloribus tempore adipisci consequuntur? Id quae sapiente facere nemo eaque, commodi reprehenderit perferendis esse, numquam architecto molestiae dolor. Dolorem similique quia consequuntur cum, consequatur ea nihil natus incidunt quas eos. Iste corporis itaque consequatur mollitia excepturi, cum iusto!
+      </p>
+    </div>
+    
+    <div class="d-flex gap-2 mt-3">
+      <button class="btn btn-outline-success"><i class="bi bi-mic"></i> Podcast</button>
+      <button class="btn btn-outline-success"><i class="bi bi-clock"></i> 55 mins.</button>
+      <button class="btn btn-primary"><i class="bi bi-play-circle"></i> Play Episode</button>
+    </div>
+  </div>
+</div>
+
+<br> 
+<br>
+<br> 
+<br> 
+<br> 
+<br>
+
+<div class="container d-flex blog p-0 overflow-hidden shadow-lg rounded-4 flex-sm-column flex-lg-row">
+  <div class="desc">
+    <div class="blog-title">
+      <h3 class="text-primary fs-1">Podcast Title</h3>
+      <p class="text-muted fs-3"><i class="bi bi-calendar"></i> Mon, May 25th 2020</p>
+      <hr class="text-primary w-25">
+      <p class="text-secondary">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse animi veniam, odit, sequi praesentium, ab similique laborum in dicta officia vel? Eos magni nostrum assumenda dolorem accusantium magnam et blanditiis numquam repellendus odio molestias repudiandae dolores sapiente ratione porro beatae inventore, culpa id quasi, esse, iusto impedit minima distinctio. Error veniam atque corrupti iure minus dolor, aspernatur ducimus perferendis deleniti beatae soluta doloribus tempore adipisci consequuntur? Id quae sapiente facere nemo eaque, commodi reprehenderit perferendis esse, numquam architecto molestiae dolor. Dolorem similique quia consequuntur cum, consequatur ea nihil natus incidunt quas eos. Iste corporis itaque consequatur mollitia excepturi, cum iusto!
+      </p>
+    </div>
+    
+    <div class="d-flex gap-2 mt-3">
+      <button class="btn btn-outline-success"><i class="bi bi-mic"></i> Podcast</button>
+      <button class="btn btn-outline-success"><i class="bi bi-clock"></i> 55 mins.</button>
+      <button class="btn btn-primary"><i class="bi bi-play-circle"></i> Play Episode</button>
+    </div>
+  </div>
+  <div class="image-div">
+    <img src="./images/Fantasy Class - 5 in one room - Review from Inspiration, 10-3-2011.jpeg" alt="" class="img-fluid" style="height: 100%;">
+  </div>
+</div>
+
+<br> 
+<br>
+<br> 
+<br> 
+<br> 
+<br>
+
+<div class="container d-flex blog p-0 overflow-hidden shadow-lg rounded-4">
+  <div class="image-div">
+    <img src="./images/Odyssey of the Seas interior cabin tour _ Royal Caribbean cruise ship.jpeg" alt="" class="img-fluid" style="height: 100%;">
+  </div>
+  <div class="desc-1">
+    <div class="blog-title">
+      <h3 class="text-primary fs-1">Podcast Title</h3>
+      <p class="text-muted fs-3"><i class="bi bi-calendar"></i> Mon, May 25th 2020</p>
+      <hr class="text-primary w-25">
+      <p class="text-secondary">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse animi veniam, odit, sequi praesentium, ab similique laborum in dicta officia vel? Eos magni nostrum assumenda dolorem accusantium magnam et blanditiis numquam repellendus odio molestias repudiandae dolores sapiente ratione porro beatae inventore, culpa id quasi, esse, iusto impedit minima distinctio. Error veniam atque corrupti iure minus dolor, aspernatur ducimus perferendis deleniti beatae soluta doloribus tempore adipisci consequuntur? Id quae sapiente facere nemo eaque, commodi reprehenderit perferendis esse, numquam architecto molestiae dolor. Dolorem similique quia consequuntur cum, consequatur ea nihil natus incidunt quas eos. Iste corporis itaque consequatur mollitia excepturi, cum iusto!
+      </p>
+    </div>
+    
+    <div class="d-flex gap-2 mt-3">
+      <button class="btn btn-outline-success"><i class="bi bi-mic"></i> Podcast</button>
+      <button class="btn btn-outline-success"><i class="bi bi-clock"></i> 55 mins.</button>
+      <button class="btn btn-primary"><i class="bi bi-play-circle"></i> Play Episode</button>
+    </div>
+  </div>
+</div>
+
+<!-- end blog -->
+<br>
+<hr>
+<br>
+
+<!-- start contact -->
+
+<div class="container-fluid p-lg-3 p-1">
+  <br>
+  <h2 class="text-center text-primary text-capitalize" style="font-size: 3em;">Get in touch</h2>
+  <br>
+</div>
+
+
+<div class="container-lg d-flex justify-content-center flex-column flex-lg-row gap-4 align-items-center">
+  <div class="contact col-12 col-sm-6 col-lg-3 text-center shadow-lg rounded-3 d-flex flex-column justify-content-between p-3 align-items-center">
+    <h3 class="text-uppercase fs-2 text-info">Subscribe</h3>
+    <div class="images rounded-4 shadow-lg overflow-hidden">
+      <img src="/images/Premium Vector _ 3d Tiktok logo social media icon and button background.jpeg" alt="" class="img-fluid" style="height: 100%;">
+    </div>
+    <a href="#" class="link text-decoration-none fw-bold text-info fs-3">Go to link</a>
+  </div>
+
+  <div class="contact col-12 col-sm-6 col-lg-3 text-center shadow-lg rounded-3 d-flex flex-column justify-content-between p-3 align-items-center">
+    <h3 class="text-uppercase fs-2 text-info">Subscribe</h3>
+    <div class="images rounded-4 shadow-lg overflow-hidden">
+      <img src="/images/wa.jpeg" alt="" class="img-fluid" style="height: 100%;">
+    </div>
+    <a href="#" class="link text-decoration-none fw-bold text-info fs-3">Go to link</a>
+  </div>
+
+  <div class="contact col-12 col-sm-6 col-lg-3 text-center shadow-lg rounded-3 d-flex flex-column justify-content-between p-3 align-items-center">
+    <h3 class="text-uppercase fs-2 text-info">Subscribe</h3>
+    <div class="images rounded-4 shadow-lg overflow-hidden">
+      <img src="/images/linked.jpeg" alt="" class="img-fluid" style="height: 100%;">
+    </div>
+    <a href="#" class="link text-decoration-none fw-bold text-info fs-3">Go to link</a>
+  </div>
+
+  <div class="contact col-12 col-sm-6 col-lg-3 text-center shadow-lg rounded-3 d-flex flex-column justify-content-between p-3 align-items-center">
+    <h3 class="text-uppercase fs-2 text-info">Subscribe</h3>
+    <div class="images rounded-4 shadow-lg overflow-hidden">
+      <img src="/images/tw.jpeg" alt="" class="img-fluid" style="height: 100%;">
+    </div>
+    <a href="#" class="link text-decoration-none fw-bold text-info fs-3">Go to link</a>
+  </div>
+</div>
+
+
+<!-- end contacts -->
+<br>
+<br>
+<br>
+
+<!-- start footer -->
+<div class="container-fluid bg-dark">
+  <div class="row d-flex">
+    <div class="foot-1 d-flex flex-column col-lg-4">
+      <hr class="border-light">
+      <div class="foot-header d-flex justify-content-center gap-5 align-items-center">
+        <div style="width: 20%; height: 100px;" class="overflow-hidden rounded-circle">
+          <img src="/images/logo.webp" width="100%" height="100%">
+        </div>
+        <h2 class="text-light">Contact us</h2>
+      </div>
+      <hr class="border-light">
+      <p class="text-light fs-5 text-center text-capitalize ">tel: 000-000-000</p>
+      <p class="text-light fs-5 text-center text-capitalize ">add: click to show</p>
+      <p class="text-light fs-5 text-center text-capitalize ">fax: 000-000</p>
+    </div>
+    <div class="foot-1 d-flex flex-column col-lg-4">
+      <hr class="border-light">
+      <div class="foot-header d-flex justify-content-center gap-5 align-items-center">
+        <div style="width: 20%; height: 100px;" class="overflow-hidden rounded-circle">
+          <img src="/images/logo.webp" width="100%" height="100%">
+        </div>
+        <h2 class="text-light">Important links</h2>
+      </div>
+      <hr class="border-light">
+      <p class="text-center"><a href="#" class="link text-decoration-none fs-5">Customer Service</a></p>
+      <p class="text-center"><a href="#" class="link text-decoration-none fs-5">Follow on social media</a></p>
+      <p class="text-center"><a href="#" class="link text-decoration-none fs-5">Enter your Feedback</a></p>
+    </div>
+    <div class="foot-1 d-flex flex-column col-lg-4">
+      <hr class="border-light">
+      <div class="foot-header d-flex justify-content-center gap-5 align-items-center">
+        <div style="width: 20%; height: 100px;" class="overflow-hidden rounded-circle">
+          <img src="/images/logo.webp" width="100%" height="100%">
+        </div>
+        <h2 class="text-light">Our vision</h2>
+      </div>
+      <hr class="border-light">
+      <p class="text-light fs-5 text-center text-capitalize ">we are the best option for you</p>
+      <p class="text-light fs-5 text-center text-capitalize ">we are the best option for you</p>
+      <p class="text-light fs-5 text-center text-capitalize ">we are the best option for you</p>
+    </div>
+  </div>
+  
+  <hr class="border-light">
+  
+  <h2 class="text-light text-center text-capitalize">All rights resrved by Architecture Modern company in 2024</h2>
+  <hr class="border-light">
+  <br>
+  <br>
+  <br>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

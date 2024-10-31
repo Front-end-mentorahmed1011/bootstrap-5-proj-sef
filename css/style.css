@@ -1,0 +1,185 @@
+
+.socials{
+    z-index: 100;
+}
+.socials i{
+    opacity: .25;
+    transition: 0.2s;
+    cursor: pointer;
+    
+}
+.logo-image{
+    width: 30px;
+    height: 100%;
+}
+.custom-btn{
+    width: 25%;
+}
+.custom-btn-2{
+    width: fit-content;
+}
+.persona{
+    width: 80%;
+    height: 40vh;
+    position: relative;
+    transition: 0.4s;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.463);
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.persona:hover{
+    transform: scale(0.8);
+    .overlay{
+        background-color: rgba(2, 99, 49, 0.728);
+    }
+}
+.contact{
+    height: 40vh;
+}
+.images{
+    width: 60%;
+    height: 50%;
+}
+
+.blog {
+    height: 70vh;
+    
+    position: relative;
+  }
+  
+  .desc,
+  .desc-1{
+    width: 75%;
+    background-color: white;
+    height: 100%; /* Keep this */
+    position: relative;
+    z-index: 3;
+    padding: 50px 100px; /* Adjust padding as needed */
+    display: flex; /* Use flex to align children */
+    flex-direction: column; /* Stack children vertically */
+     justify-content: space-between; /* Distribute space evenly  */
+  }
+  .desc{
+    clip-path: polygon(0% 0, 95% 0, 100% 100%, 0 100%);
+  }
+  .desc-1{
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .image-div {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    transform: scaleX(1.31);
+  }
+.persona-1{
+    background-image: url(../images/handsome-business-man-engineer-hard-hat-building.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.persona-2{
+    background-image: url(../images/view-male-engineer-work-engineers-day-celebration.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.persona-3{
+    background-image: url(../images/view-male-engineer-work-engineers-day-celebration\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media (min-width : 750px) {
+    body{
+        font-size: 16px;
+    }
+    .nav-link{
+        font-size: 1.3em ;
+    }
+    .navbar form button,
+    .navbar form input{
+        font-size: 1.3em;
+    } 
+    .logo-image{
+        width: 70px;
+        height: 100%;
+    }
+    .custom-btn{
+        width: 15%;
+    }
+    .custom-btn-2{
+        width: 5%;
+    }
+    .persona{
+        width: 27%;
+        height: 60vh;
+    }
+}
+@media (max-width : 750px) {
+    body{
+        font-size: 12px;
+    }
+    .contact{
+        width: 50%;
+    }
+    .blog{
+        font-size: 10px;
+    }
+    .desc,
+    .desc-1{
+        padding: 5px 20px;
+        justify-content: space-around;
+    }
+}
+.socials i:hover{
+    opacity: 1;
+}
+/* .bordered{
+    border: 1px solid black;
+    border-radius: 2px;
+} */
+
+.testimonials-image{
+    height: 50vh;
+    background-image: url(../images/testi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card{
+    position: relative;
+}
+
+.card::after,
+.card::before{
+    content: "";
+    width: 0;
+    height: 0;
+    transition: 0.6s;
+    background-color: rgba(0, 128, 0, 0.26);
+    position: absolute;
+}
+
+.card::after{
+    left: 0;
+    top: 0;
+}
+
+.card::before{
+    right: 0;
+    bottom: 0;
+}
+
+.card:hover::after,
+.card:hover::before{
+    width: 100%;
+    height: 100%;
+}
